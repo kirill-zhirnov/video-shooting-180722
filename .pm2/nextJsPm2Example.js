@@ -1,9 +1,6 @@
 const path = require('path');
 const rootPath = path.dirname(path.dirname(__filename));
 
-//load .env file if necessary
-const dotenv = require('dotenv');
-
 module.exports = {
 	apps: [
 		{
@@ -18,9 +15,9 @@ module.exports = {
 			watch: false,
 			merge_logs: true,
 			//pass env-vars to workers
-			env: Object.assign(dotenv.config().parsed, {
+			env:  {
 				NODE_ENV: 'production'
-			})
+			}
 		}
 	]
 };
