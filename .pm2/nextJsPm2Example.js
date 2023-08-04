@@ -4,7 +4,7 @@ const rootPath = path.dirname(path.dirname(__filename));
 module.exports = {
 	apps: [
 		{
-			name: 'app-name',
+			name: 'nextjs-app',
 			cwd: rootPath,
 			//specify path to Nextjs execution file:
 			script: 'node_modules/next/dist/bin/next',
